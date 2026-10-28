@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="tarefas" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/estilo.css">
+    <title>Agendar Tarefas</title>
+</head>
+
+<body>
+    <div class="topo">
+        <h1>Gerenciador de Tarefas</h1>
+    </div>
+    <div class="container">
+
+        <p class="center subtitulo">
+            Organizando seu dia!!
+        </p>
+
+        <ul class="center">
+            <li>
+                <i class="small material-icons">event_note</i>
+                Tarefas Importantes!!
+            </li>
+            <li>Não esqueça!!!!</li>
+        </ul>
+
+        <p>Título:</p>
+        <input type="text" class="campoTitulo">
+
+        <p>Observações:</p>
+        <input type="text" class="campoObs">
+
+        <div class="tabela">
+            <form class="formulario">
+
+                <label class="tituloform">Prioridade:</label>
+
+                <select class="select">
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+
+            </form>
+        </div>
+
+        <div class="divBotao">
+            <a id="botao" class="btn-floating btn-large waves-effect waves-light">
+                <i class="material-icons">arrow_downward</i>
+            </a>
+        </div>
+
+        <section class="tarefas">
+
+            <table class="highlight">
+
+                <thead>
+                    <tr>
+                        <th>Tarefas</th>
+                        <th>Observações</th>
+                        <th>Prioridade</th>
+                        <th>Concluir</th>
+                        <th>Apagar</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
